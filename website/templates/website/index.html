@@ -3,18 +3,20 @@
 
 <pre>
     <code class=' align-numbers language-python'>
-        util: {
-			encode: function encode(tokens) {
-				if (tokens instanceof Token) {
-					return new Token(tokens.type, encode(tokens.content), tokens.alias);
-				} else if (Array.isArray(tokens)) {
-					return tokens.map(encode);
-				} else {
-					return tokens.replace(/&/g, '&').replace(/
-    </code>
-    </pre>
-    <h1 class="dodo"> kjfghdj</h1>
-    
     if name=="johnson":
         print("you are the one")
+    </code>
+    </pre>
+    <form method="POST" action="{% url 'home' %}">
+        {% csrf_token %}
+    <div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+<input class="btn btn-primary" type="button" value="Input">
+</form>
 {% endblock  %}
